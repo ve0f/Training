@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="موقع التدريب التقني للتعريف بالبرامج التدريبية وأسعارها والتسجيل التجريبي.">
+  <title>نماذج التسجيل | التدريب التقني</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="register">
+  <header class="site-header">
+    <div class="header-inner">
+         <div class="brand-mark" aria-hidden="true">
+    <img src="images/Minimalist Black Lightbulb Icon.png" alt="">
+    </div>
+      <div class="brand-copy"><strong>التدريب التقني</strong><span>خطوتك الأولى نحو مهارة تقنية جديدة</span></div>
+    </div>
+<nav class="main-nav" aria-label="التنقل الرئيسي">
+
+    <div class="nav-links">
+
+        <a href="index.html">الرئيسية</a>
+
+        <a href="about.html">من نحن</a>
+
+        <a href="data.html">جدول البيانات</a>
+
+        <a href="register.html" class="active">التسجيل</a>
+
+        <a href="calculator.html">الحاسبة</a>
+
+    </div>
+
+    <details class="nav-dropdown">
+
+        <summary>البرامج التدريبية</summary>
+
+        <div class="dropdown-menu">
+
+            <a href="product-computing.html">أساسيات الحاسب</a>
+
+            <a href="product-programming.html">مقدمة في البرمجة</a>
+
+            <a href="product-data.html">تحليل البيانات</a>
+
+            <a href="product-cybersecurity.html">الأمن السيبراني</a>
+
+            <a href="product-design.html">التصميم الرقمي</a>
+
+            <a href="product-office.html">تطبيقات الأعمال</a>
+
+        </div>
+
+    </details>
+
+</nav>
+
+  </header>
+  <main class="container">
+    
+<section class="section-heading"><span class="eyebrow">ابدأ رحلتك التعليمية</span><h1>سجل معنا!</h1><p>املأ الحقول التالية وفق المطلوب ليتم اعتماد تسجيلك</p></section>
+<section class="form-card">
+  <h2>نموذج التسجيل</h2>
+  <form id="registrationForm" novalidate>
+    <div class="form-grid">
+      <div class="field"><label for="studentName">الاسم الكامل</label><input type="text" id="studentName" name="studentName" placeholder="اكتب اسمك"></div>
+      <div class="field"><label for="studentEmail">البريد الإلكتروني</label><input type="email" id="studentEmail" name="studentEmail" placeholder="name@example.com"></div>
+      <div class="field"><label for="studentPassword">كلمة المرور</label><input type="password" id="studentPassword" name="studentPassword" placeholder="6 أحرف على الأقل"></div>
+      <div class="field"><label for="trainingTrack">البرنامج التدريبي</label><select id="trainingTrack" name="trainingTrack"><option value="">اختر البرنامج</option><option value="أساسيات الحاسب">أساسيات الحاسب</option><option value="مقدمة في البرمجة">مقدمة في البرمجة</option><option value="تحليل البيانات">تحليل البيانات</option><option value="الأمن السيبراني">الأمن السيبراني</option><option value="التصميم الرقمي">التصميم الرقمي</option><option value="تطبيقات الأعمال">تطبيقات الأعمال</option></select></div>
+      <div class="field full"><label for="studentNotes">لماذا ترغب في الالتحاق بالبرنامج؟</label><textarea id="studentNotes" name="studentNotes" placeholder="اكتب نبذة قصيرة"></textarea></div>
+    </div>
+    <button class="button" type="submit">التحقق من البيانات</button>
+    <p class="status" id="formStatus" aria-live="polite"></p>
+  </form>
+  <div class="callout"><p>تأكد من صحة بياناتك قبل إرسال النموذج</p></div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <h3>التدريب التقني</h3>
+      <ul class="footer-links"><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li></ul>
+      <div class="footer-bottom">مشروع جامعي تعليمي تطبيقي — الأسعار والمعلومات الواردة تجريبية لأغراض المشروع</div>
+    </div>
+  </footer>
+</body>
+</html>

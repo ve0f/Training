@@ -1,0 +1,324 @@
+/* ملف التنسيق الخارجي للمشروع */
+:root {
+  --navy: #123047;
+  --navy-dark: #0b2234;
+  --teal: #00a88f;
+  --teal-soft: #e5f6f2;
+  --gold: #ffc66d;
+  --ink: #233746;
+  --muted: #667985;
+  --line: #dce5e9;
+  --paper: #ffffff;
+  --page: #f4f7f8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.85;
+  color: var(--ink);
+  background-color: var(--page);
+}
+
+a { color: var(--teal); text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+
+.site-header {
+  background-color: var(--navy);
+  color: #ffffff;
+  padding: 18px 5%;
+}
+.header-inner { max-width: 1160px; margin: auto; }
+.brand-mark {
+  float: right;
+  width: 48px;
+  height: 48px;
+  margin-left: 12px;
+  border-radius: 14px;
+  background-color: var(--teal);
+  color: var(--navy-dark);
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 48px;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.brand-mark img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+}
+.brand-copy { overflow: hidden; }
+.brand-copy strong { display: block; font-size: 20px; color: #ffffff; }
+.brand-copy span { color: #c9d9e0; font-size: 13px; }
+.header-inner::after { content: ""; display: block; clear: both; }
+
+.main-nav {
+  max-width: 1160px;
+  margin: 16px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.main-nav a,
+.nav-dropdown > summary {
+  display: inline-block;
+  padding: 7px 13px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown > summary {
+  list-style: none;
+}
+
+.nav-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown > summary::after {
+  content: " ▼";
+  font-size: 10px;
+}
+
+.main-nav a:hover,
+.main-nav a.active,
+.nav-dropdown:hover > summary,
+.nav-dropdown[open] > summary {
+  background-color: var(--teal);
+  color: var(--navy-dark);
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 220px;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(18,48,71,.15);
+  z-index: 1000;
+}
+
+.nav-dropdown[open] .dropdown-menu,
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  color: var(--navy);
+  border: none;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 13px;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--teal-soft);
+  color: var(--navy);
+}
+
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: var(--teal);
+  color: var(--navy-dark);
+  text-decoration: none;
+}
+
+
+.container { width: min(1160px, 90%); margin: 34px auto; }
+.hero, .panel, .course-card, .info-card, .form-card, .calculator-card {
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(18,48,71,.05);
+}
+.hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items: center; padding: 34px; }
+.hero h1 { margin: 0 0 12px; color: var(--navy); font-size: 34px; line-height: 1.4; }
+.hero p { color: var(--muted); margin-top: 0; }
+.hero img { width: 100%; max-height: 300px; object-fit: contain; }
+.about-illustration { display: block; width: min(100%, 520px); margin: 10px auto; }
+.eyebrow { display: inline-block; color: var(--teal); font-weight: bold; font-size: 14px; margin-bottom: 8px; }
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.5; color: var(--navy); }
+h1 { font-size: 30px; }
+h2 { font-size: 24px; margin-top: 0; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 13px; }
+p { margin-top: 0; }
+.section { margin-top: 28px; }
+.section-heading { margin-bottom: 15px; }
+.section-heading p { color: var(--muted); }
+
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.info-card, .course-card { padding: 22px; }
+.info-card p, .course-card p { color: var(--muted); }
+.card-icon { width: 44px; height: 44px; display: inline-grid; place-items: center; border-radius: 13px; background-color: var(--teal-soft); color: var(--teal); font-size: 22px; }
+.course-card h3 { margin: 10px 0 5px; }
+.price { color: var(--teal); font-size: 23px; font-weight: bold; }
+.price small { color: var(--muted); font-size: 13px; font-weight: normal; }
+
+.panel { padding: 26px; }
+.panel + .panel { margin-top: 20px; }
+.grid-2 > .panel {
+  margin-top: 0;
+}
+.callout { padding: 16px 19px; border-right: 4px solid var(--teal); background-color: var(--teal-soft); border-radius: 10px; }
+.callout p { margin: 0; }
+.float-note {
+  float: left;
+  width: 30%;
+  margin: 0 18px 12px 0;
+  padding: 15px;
+  border-radius: 13px;
+  background-color: #fff4e5;
+  color: var(--navy);
+  text-align: center;
+}
+.clearfix::after { content: ""; display: block; clear: both; }
+
+ul { padding-right: 23px; }
+li { margin-bottom: 7px; }
+
+.table-wrap { overflow-x: auto; background: var(--paper); border-radius: 14px; border: 1px solid var(--line); }
+table { width: 100%; border-collapse: collapse; min-width: 620px; text-align: center; }
+th, td { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+th { background-color: var(--navy); color: #ffffff; }
+tbody tr:nth-child(even) { background-color: #edf7f5; }
+tbody tr:hover { background-color: #fff4e5; }
+.caption-note { color: var(--muted); font-size: 13px; margin-top: 9px; }
+
+.form-card, .calculator-card { padding: 26px; max-width: 760px; }
+.form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.field { margin-bottom: 14px; }
+.field.full { grid-column: 1 / -1; }
+label { display: block; margin-bottom: 6px; font-weight: bold; color: var(--navy); }
+input, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd8de;
+  border-radius: 9px;
+  background-color: #ffffff;
+  color: var(--ink);
+  font: inherit;
+}
+textarea { min-height: 110px; resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: 2px solid rgba(0,168,143,.22); border-color: var(--teal); }
+.button {
+  display: inline-block;
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 20px;
+  background-color: var(--teal);
+  color: var(--navy-dark);
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button:hover { background-color: #00bd9f; text-decoration: none; }
+.button.secondary { background-color: var(--navy); color: #ffffff; }
+.status { margin-top: 14px; font-weight: bold; }
+.status.error { color: #b42318; }
+.status.success { color: #087f5b; }
+.result-box { margin-top: 18px; padding: 17px; background-color: var(--teal-soft); border-radius: 12px; }
+.result-box strong { color: var(--navy); }
+
+.product-detail { display: grid; grid-template-columns: .8fr 1.2fr; gap: 24px; align-items: center; }
+.product-detail img { width: 100%; max-height: 450px;  object-fit: cover; display: block; }
+.product-facts { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0; }
+.fact { padding: 7px 12px; background-color: #edf3f6; border-radius: 20px; font-size: 14px; }
+
+.site-footer { margin-top: 45px; padding: 30px 5%; background-color: var(--navy-dark); color: #d6e1e7; }
+.footer-inner { max-width: 1160px; margin: auto; }
+.footer-inner h3 { color: #ffffff; margin-top: 0; }
+.footer-links { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px 18px; padding: 0; list-style: none; }
+.footer-links a { color: #bfece3; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; padding-top: 14px; font-size: 13px; color: #a9bbc5; }
+
+@media (max-width: 800px) {
+  .hero, .product-detail { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .float-note { float: none; width: auto; margin: 0 0 14px; }
+}
+@media (max-width: 560px) {
+  .grid-3, .grid-2, .form-grid { grid-template-columns: 1fr; }
+  .hero { padding: 22px; }
+  .hero h1 { font-size: 27px; }
+  .container { width: 92%; margin: 22px auto; }
+  .panel, .form-card, .calculator-card { padding: 19px; }
+  .footer-links { grid-template-columns: repeat(2, 1fr); }
+}
+/* تنسيق اختيار البرامج في الحاسبة */
+
+.course-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.course-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin: 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background-color: var(--paper);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.course-option input[type="checkbox"] {
+    display: inline-block;
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    accent-color: var(--teal);
+    cursor: pointer;
+}
+
+@media (max-width: 560px) {
+    .course-options {
+        grid-template-columns: 1fr;
+    }
+}

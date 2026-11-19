@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="موقع التدريب التقني للتعريف بالبرامج التدريبية وأسعارها والتسجيل التجريبي.">
+  <title>الحاسبة التفاعلية | التدريب التقني</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="calculator">
+  <header class="site-header">
+    <div class="header-inner">
+          <div class="brand-mark" aria-hidden="true">
+    <img src="images/Minimalist Black Lightbulb Icon.png" alt="">
+    </div>
+      <div class="brand-copy"><strong>التدريب التقني </strong><span>خطوتك الأولى نحو مهارة تقنية جديدة</span></div>
+    </div>
+<nav class="main-nav" aria-label="التنقل الرئيسي">
+
+    <div class="nav-links">
+
+        <a href="index.html">الرئيسية</a>
+
+        <a href="about.html">من نحن</a>
+
+        <a href="data.html">جدول البيانات</a>
+
+        <a href="register.html" >التسجيل</a>
+
+        <a href="calculator.html" class="active">الحاسبة</a>
+
+    </div>
+
+    <details class="nav-dropdown">
+
+        <summary>البرامج التدريبية</summary>
+
+        <div class="dropdown-menu">
+
+            <a href="product-computing.html">أساسيات الحاسب</a>
+
+            <a href="product-programming.html">مقدمة في البرمجة</a>
+
+            <a href="product-data.html">تحليل البيانات</a>
+
+            <a href="product-cybersecurity.html">الأمن السيبراني</a>
+
+            <a href="product-design.html">التصميم الرقمي</a>
+
+            <a href="product-office.html">تطبيقات الأعمال</a>
+
+        </div>
+
+    </details>
+
+</nav>
+
+  </header>
+  <main class="container">
+    
+<section class="section-heading"><span class="eyebrow">احسب!</span><h1>الحاسبة التفاعلية</h1><p>احسب تكلفة البرامج التي تريد التسجيل فيها</p></section>
+<section class="calculator-card">
+  <h2>لنحسب تكلفة تدريبك</h2>
+
+  <div class="field">
+
+    <span class="field-label">اختر البرامج التدريبية</span>
+
+    <div class="course-options" id="courseType">
+
+        <label class="course-option">
+            <input type="checkbox" value="199">
+            <span>أساسيات الحاسب — 199 ريال</span>
+        </label>
+
+        <label class="course-option">
+            <input type="checkbox" value="399">
+            <span>مقدمة في البرمجة — 399 ريال</span>
+        </label>
+
+        <label class="course-option">
+            <input type="checkbox" value="449">
+            <span>تحليل البيانات — 449 ريال</span>
+        </label>
+
+        <label class="course-option">
+            <input type="checkbox" value="499">
+            <span>الأمن السيبراني — 499 ريال</span>
+        </label>
+
+        <label class="course-option">
+            <input type="checkbox" value="349">
+            <span>التصميم الرقمي — 349 ريال</span>
+        </label>
+
+        <label class="course-option">
+            <input type="checkbox" value="249">
+            <span>تطبيقات الأعمال — 249 ريال</span>
+        </label>
+
+    </div>
+</div>
+
+      <div class="field"><label for="participantCount">عدد المتدربين (أقصى حد 30)</label><input type="number" id="participantCount" min="1" max="30" value="1"></div>
+  <button class="button" id="calculateButton" type="button">احسب التكلفة</button>
+  <div class="result-box" id="calculationResult" aria-live="polite">المجموع الإجمالي:</div>
+  <small>سيطبق خصم 10% عند تسجيل 5 متدربين أو أكثر</small></div>
+
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <h3>التدريب التقني</h3>
+      <ul class="footer-links"><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li></ul>
+      <div class="footer-bottom">مشروع جامعي تعليمي تطبيقي — الأسعار والمعلومات الواردة تجريبية لأغراض المشروع</div>
+    </div>
+  </footer>
+</body>
+</html>
